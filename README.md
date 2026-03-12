@@ -43,3 +43,41 @@ This script consolidates **all** of them into one clean CSV extract.
 ---
 
 ## 📁 Project Structure
+.
+├── export_mr_comments.sh   # Main script
+└── README.md               # Documentation
+
+---
+
+## 🔧 Prerequisites
+
+Install dependencies:
+
+```bash
+sudo apt install jq curl
+Ensure you have a GitLab Personal Access Token with:
+
+- api scope
+
+⚙️ Configuration
+Inside the script, set:
+GITLAB_URL="https://gitlab.laurengroup.ai"
+GITLAB_TOKEN="glpat-xxxxxxxxxxxxxxxx"
+PROJECT_ID="227"                # Change per repo
+TARGET_BRANCH="development"     # Branch to filter MRs
+OUTPUT_FILE="mr_comments.csv"
+To use with another repository, simply update:
+
+- PROJECT_ID
+- TARGET_BRANCH
+---
+
+▶️ Usage
+Make the script executable:
+
+chmod +x export_mr_comments.sh
+./export_mr_comments.sh
+mr_comments.csv
+
+
+
