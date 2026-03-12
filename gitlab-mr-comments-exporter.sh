@@ -9,7 +9,7 @@ GITLAB_TOKEN="glpat"
 PROJECT_ID="242"
 TARGET_BRANCH="development"
 
-OUTPUT_FILE="OAS-Admin-BE-Gitlab-Commit.csv"
+OUTPUT_FILE="Gitlab-Commit.csv"
 
 set -euo pipefail
 
